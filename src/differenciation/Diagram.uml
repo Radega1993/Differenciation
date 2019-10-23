@@ -1,0 +1,69 @@
+
+@startuml
+
+Function <|-- GroupOperations
+Function <--o GroupOperations
+Function <--  Numbers
+Function <--  Sum
+Function <--  Minus
+Function <--  Plus
+Function <--  Division
+Function <--  Sin
+Function <--  Cos
+Function <--  Pow
+Function <--  Log
+Function <--  Exp
+
+
+Function : showFuntion()
+Function : addOperation(IOperations ope)
+Function : removeOperation(IOperations ope)
+GroupOperations : showFuntion()
+
+Numbers : Double number
+Numbers : Double getNumber()
+Numbers : void setNumber(Double number)
+
+Sum : Number number
+Sum : double res
+Sum : Sum(Number number, double res)
+Sum : void showFunction()
+
+Minus : Number number
+Minus : double res
+Minus : Minus(Number number, double res)
+Minus : void showFunction()
+
+Plus : Number number
+Plus : double res
+Plus : Plus(Number number, double res)
+Plus : void showFunction()
+
+Division : Number number
+Division : double res
+Division : Division(Number number, double res)
+Division : void showFunction()
+
+Sin : double res
+Sin : Sin(double res)
+Sin : void showFunction()
+
+Cos : double res
+Cos : Cos(double res)
+Cos : void showFunction()
+
+Pow : Number number
+Pow : double res
+Pow : Pow(Number number, double res)
+Pow : void showFunction()
+
+Log : double res
+Log : Log(double res)
+Log : void showFunction()
+
+Exp : double res
+Exp : Exp(double res)
+Exp : getRes() {
+Exp : void showFunction()
+
+@enduml
