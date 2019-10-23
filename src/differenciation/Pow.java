@@ -8,7 +8,10 @@ public class Pow implements IOperations{
 	public Pow(double res, double number) {
 		this.res = res;
 		
-		power = Math.pow(res, number);
+		for (int i = 1; i<=number; i++) {
+			res = res * number;
+		}
+		power = res;
 	}
 	
 	public double getRes() {

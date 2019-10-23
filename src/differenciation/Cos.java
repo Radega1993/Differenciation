@@ -6,7 +6,10 @@ public class Cos implements IOperations{
 	
 	public Cos(double res) {
 		
-		this.res = Math.cos(res);
+		Sin sin = new Sin(res);
+		Pow pow = new Pow (sin.getRes(), 2);
+		
+		this.res = Math.sqrt(1-pow.getRes());
 
 	}
 	

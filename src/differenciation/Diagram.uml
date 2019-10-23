@@ -39,13 +39,15 @@ Plus : double res
 Plus : Plus(Number number, double res)
 Plus : void showFunction()
 
-Division : Number number
+Division : double number
 Division : double res
-Division : Division(Number number, double res)
+Division : double division
+Division : Division(double number, double res)
 Division : void showFunction()
 
 Sin : double res
 Sin : Sin(double res)
+Sin : int factorial(double valor)
 Sin : void showFunction()
 
 Cos : double res
@@ -67,3 +69,4 @@ Exp : getRes() {
 Exp : void showFunction()
 
 @enduml
+

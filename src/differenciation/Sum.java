@@ -3,13 +3,11 @@ package differenciation;
 public class Sum implements IOperations{
 	
 	private double res;
-	private double number;
 	private double suma;
 	
-	public Sum(double number, double res) {
+	public Sum(double res, double number) {
 		
 		this.res = res;
-		this.number = number;
 		
 		suma = res+number;
 	}
