@@ -20,21 +20,21 @@ Function : addOperation(IOperations ope)
 Function : removeOperation(IOperations ope)
 GroupOperations : showFuntion()
 
-Numbers : Double number
-Numbers : Double getNumber()
+Numbers : double number
+Numbers : double getNumber()
 Numbers : void setNumber(Double number)
 
-Sum : Number number
+Sum : double number
 Sum : double res
 Sum : Sum(Number number, double res)
 Sum : void showFunction()
 
-Minus : Number number
+Minus : double number
 Minus : double res
 Minus : Minus(Number number, double res)
 Minus : void showFunction()
 
-Plus : Number number
+Plus : double number
 Plus : double res
 Plus : Plus(Number number, double res)
 Plus : void showFunction()

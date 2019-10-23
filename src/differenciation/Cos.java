@@ -2,14 +2,14 @@ package differenciation;
 
 public class Cos implements IOperations{
 
-	private double res;
+	private long res;
 	
-	public Cos(double res) {
+	public Cos(long res) {
 		
 		Sin sin = new Sin(res);
 		Pow pow = new Pow (sin.getRes(), 2);
 		
-		this.res = Math.sqrt(1-pow.getRes());
+		this.res = (long) Math.sqrt(1-pow.getRes());
 
 	}
 	

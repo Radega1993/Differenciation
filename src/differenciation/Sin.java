@@ -10,21 +10,22 @@ public class Sin implements IOperations{
 	
 	public Sin(double res) {
 		this.res = res;
+		long s = 0;
 		
-		double s = 0.0;
-		double signo = 1.0;
-		
-		for(int i=0; i<10; i+=2) {
-			Pow power = new Pow(res, i);
-			s += signo*power.getRes() / factorial(i);
-			signo *= -1;
+		for(int i=0; i<10; i++) {
+			Pow power = new Pow(res, 2*i+1);
+			Pow signo = new Pow(-1, i);
+			double value = 2*i+1;
+			s += signo.getRes()*power.getRes() / factorial(value);
+			
+			
 		}
 		this.res = s;
 	    
 	}
 	
-	public int factorial (double valor) {
-		int result = 1;
+	public long factorial (double valor) {
+		long result = 1;
 		for (int i = 1; i<=valor; i++) {
 			result *= i;
 		}

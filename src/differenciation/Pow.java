@@ -7,11 +7,11 @@ public class Pow implements IOperations{
 	
 	public Pow(double res, double number) {
 		this.res = res;
-		
+		double aux = 1;
 		for (int i = 1; i<=number; i++) {
-			res = res * number;
+			aux = aux * res;
 		}
-		power = res;
+		power = aux;
 	}
 	
 	public double getRes() {
