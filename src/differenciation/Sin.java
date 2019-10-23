@@ -2,7 +2,6 @@ package differenciation;
 
 /**
  * 
- * @author raul
  *Aproximación por Taylor del sin()
  */
 public class Sin implements IOperations{
